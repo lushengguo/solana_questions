@@ -7,7 +7,7 @@ https://docs.anza.xyz/consensus/leader-rotation
 用round robin的方式轮流当领导/生成区块, 每人负责一个slot,
 这个leader schedule是写在block里的, 在下个epoch开始之前, 计算出来下一个leader schedule
 
-1. 看到POH机制解决了区块链的分叉问题, 真的解决了吗? 怎么解决的?
+- 看到POH机制解决了区块链的分叉问题, 真的解决了吗? 怎么解决的?
 目前看下来选举leader schdule的时候有点关系, 因为每个slot都是有对应的负责人的, 没生成区块或者做恶生成了无效区块, 
 都不会被validator接受.
 
@@ -23,4 +23,4 @@ Leader schedule is generated using a predefined seed. The process is as follows:
 5. This ordering becomes valid after a cluster-configured number of ticks.
 
 
-2. POH存在的必要性是什么, 它跟solana支持每秒大量tx有关吗?
+- POH存在的必要性是什么, 它跟solana支持每秒大量tx有关吗?
