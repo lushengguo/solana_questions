@@ -11,6 +11,8 @@ https://docs.anza.xyz/consensus/leader-rotation
 目前看下来选举leader schdule的时候有点关系, 因为每个slot都是有对应的负责人的, 没生成区块或者做恶生成了无效区块, 
 都不会被validator接受.
 
+这里PoH里面的一个参数被用来选择随机算法, 私以为这里可以用其他的东西替代, 比如前n个有效block的hash(如果在epoch内连几个有效block都搞不到的话, 这链价值早跌没了
+
 FYI:
 # Leader Schedule Generation Algorithm
 Leader schedule is generated using a predefined seed. The process is as follows:
@@ -24,3 +26,4 @@ Leader schedule is generated using a predefined seed. The process is as follows:
 
 
 - POH存在的必要性是什么, 它跟solana支持每秒大量tx有关吗?
+2025/1/3日, 目前为止没看到PoH存在的必要性证明
